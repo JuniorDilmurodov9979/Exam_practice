@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header started  -->
+    
+    <header class="site-header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo-link" href="/index.html" >
+                    <img src="./images/Logo.svg" class="site-logo" alt="site logo">
+                </a>
+                <a href="#" class="header__link-active">
+                    <img class="header__link-img" src="./images/header-img.png"  alt="header profile picture">
+                </a>
+                <form class="header__form" action="https://echo.htmlacademy.ru/courses" method="GET" autocomplete="off">
+                    <input class="header__input" type="search" placeholder="Search something here" name="user_search" autocomplete="off">
+                    <button type="button" class="header__input-box"></button>
+                </form>
+                <div class="header__link-wrapper">
+                    <a href="#" class="header__link"></a>
+                    <a href="#" class="header__link"></a>
+                    <a href="#" class="header__link"></a>
+                </div>
+               
+            </div>
+            <form class="header__form-passive" action="https://echo.htmlacademy.ru/courses" method="GET" autocomplete="off">
+                <input class="header__input" type="search" placeholder="Search something here" name="user_search" autocomplete="off">
+                <button type="button" class="header__input-box"></button>
+            </form>
+        </div>
+    </header>
+    
+    <!-- header finished  -->
+    
+    <main class="site-main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="visually-hidden">Car rent platform</h1>
+                    <ul class="hero__list">
+                        <li class="hero__item">
+                            <div class="hero__item-wrapper hero__item-wrapper--first">
+                                <div class="hero__item-inner">
+                                    <h2 class="hero__item-title">The Best Platform for Car Rental
+                                    </h2>
+                                    <p class="hero__item-desc">
+                                        Ease of doing a car rental safely and reliably. Of course at a low price.
+                                    </p>
+                                    <a href="#" class="hero__link">
+                                        Rental Car
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hero__item">
+                            <div class="hero__item-wrapper hero__item-wrapper--second">
+                                <div class="hero__item-inner">
+                                    <h2 class="hero__item-title">Easy way to rent a car at a low price
+                                    </h2>
+                                    <p class="hero__item-desc">
+                                        Providing cheap car rental services and safe and comfortable facilities.
+                                    </p>
+                                    <a href="#" class="hero__link hero__link--active">
+                                        Rental Car
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="filter">
+            <div class="container">
+                <div class="filter__inner">
+                    <div class="filter__item">
+                        <div class="filter__label-wrapper">
+                            <span id="radio" class="filter__radio"></span>
+                            <label class="filter__label" for="radio">
+                                Pick - Up
+                                
+                            </label>
+                        </div>
+                        <ul class="filter__list">
+                            <li class="filter__list-item">
+                                <label class="filter__list-label">
+                                    Locations
+                                    <div class="filter__select-wrapper">
+                                        <select class="filter__select" name="Locations" >
+                                            <option class="filter__option" value="Select your city" hidden>Select your city
+                                            </option>
+                                            <option  value="Semarang" >Semarang</option>
+                                        </select>
+                                        <span class="filter__select-box"></span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="filter__list-item">
+                                <label class="filter__list-label">
+                                    Date
+                                    <div class="filter__select-wrapper">
+                                        <select class="filter__select" name="Date" >
+                                            <option class="filter__option" value="Select your date" hidden>
+                                                Select your date
+                                            </option>
+                                            <option  value="20 July 2022">20 July 2022</option>
+                                        </select>
+                                        <span class="filter__select-box"></span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="filter__list-item">
+                                <label class="filter__list-label">
+                                    Time
+                                    <div class="filter__select-wrapper">
+                                        <select class="filter__select" name="Time" >
+                                            <option class="filter__option" value="Select your time" hidden> 
+                                                Select your time
+                                            </option>
+                                            <option  value="07.00">07.00</option>
+                                        </select>
+                                        <span class="filter__select-box"></span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="filter__btn" type="button"></button>
+                    <div class="filter__item">
+                        <div class="filter__label-wrapper">
+                            <span id="radio" class="filter__radio filter__radio--active"></span>
+                            <label class="filter__label" for="radio">                              
+                                Drop - Off
+                            </label>
+                        </div>
+                        <ul class="filter__list">
+                            <li class="filter__list-item">
+                                <label class="filter__list-label">
+                                    Locations
+                                    <div class="filter__select-wrapper">
+                                        <select class="filter__select" name="Locations" >
+                                            <option class="filter__option" value="Select your city" hidden>
+                                                Select your city
+                                            </option>
+                                            <option  value="Semarang" >Semarang
+                                            </option>
+                                        </select>
+                                        <span class="filter__select-box"></span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="filter__list-item">
+                                <label class="filter__list-label">
+                                    Date
+                                    <div class="filter__select-wrapper">
+                                        <select class="filter__select" name="Date" >
+                                            <option class="filter__option" value="Select your date" hidden>
+                                                Select your date
+                                            </option>
+                                            <option  value="21 July 2022">21 July 2022</option>
+                                        </select>
+                                        <span class="filter__select-box"></span>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+                            <li class="filter__list-item">
+                                <label class="filter__list-label">
+                                    Time
+                                    <div class="filter__select-wrapper">
+                                        <select class="filter__select" name="Time" >
+                                            <option class="filter__option" value="Select your time" hidden>
+                                                Select your time
+                                            </option>
+                                            <option value="01.00">01.00
+                                            </option>
+                                        </select>
+                                        <span class="filter__select-box"></span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="car">
+            <div class="container">
+                <div class="car__title-wrapper">
+                    <h2 class="car__title">
+                        Popular Car
+                    </h2>
+                    <a href="#" class="car__link">
+                        View All
+                    </a>
+                </div>
+                <div class="car__top">
+                    <ul class="car__list">
+                        <li class="car__item">
+                            <div class="car__item-inner">
+                                <div class="car__item-title-wrapper">
+                                    <h3 class="car__item-title">
+                                        Koenigsegg
+                                    </h3>
+                                    <p class="car__type">
+                                        Sport
+                                    </p>
+                                </div>
+                                <button class="car__btn" type="button"></button>
+                            </div>
+                            <img src="./images/car1.png" alt="Koenigsegg picture" class="car__top-img car__top-img--1">
+                            <ul class="car__info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">90L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">2 People</p>
+                                </li>
+                            </ul>
+                            <div class="car__rent-wrapper">
+                                <div class="car__rent-desc-wrapper">
+                                    <p class="car__rent-desc">$99.00/ 
+                                        <span class="car__rent-desc-active">day</span>
+                                    </p>
+                                </div>
+                                <a href="#" class="car__rent-link">Rental Now
+                                </a>
+                            </div>
+                        </li>
+                        <li class="car__item">
+                            <div class="car__item-inner">
+                                <div class="car__item-title-wrapper">
+                                    <h3 class="car__item-title">
+                                        Nissan GT - R
+                                    </h3>
+                                    <p class="car__type">
+                                        Sport
+                                    </p>
+                                </div>
+                                <button class="car__btn" type="button"></button>
+                            </div>
+                            <img src="./images/car2.png" alt="Nissan GT - R picture" class="car__top-img car__top-img--2">
+                            <ul class="car__info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">80L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">2 People</p>
+                                </li>
+                            </ul>
+                            <div class="car__rent-wrapper car__rent-wrapper--margin">
+                                <div class="car__rent-desc-wrapper ">
+                                    <p class="car__rent-desc">$80.00/ 
+                                        <span class="car__rent-desc-active">day</span>
+                                    </p>
+                                    <del class="car__rent-desc-active">$100.00</del>
+                                </div>
+                                <a href="#" class="car__rent-link">Rental Now
+                                </a>
+                            </div>
+                        </li>
+                        <li class="car__item">
+                            <div class="car__item-inner">
+                                <div class="car__item-title-wrapper">
+                                    <h3 class="car__item-title">
+                                        Rolls - Royce
+                                    </h3>
+                                    <p class="car__type">
+                                        Sedan
+                                    </p>
+                                </div>
+                                <button class="car__btn" type="button"></button>
+                            </div>
+                            <img src="./images/car3.png" alt="Rolls - Royce picture" class="car__top-img car__top-img--3">
+                            <ul class="car__info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">70L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">2 People</p>
+                                </li>
+                            </ul>
+                            <div class="car__rent-wrapper">
+                                <div class="car__rent-desc-wrapper">
+                                    <p class="car__rent-desc">$96.00/ 
+                                        <span class="car__rent-desc-active">day</span>
+                                    </p>
+                                </div>
+                                <a href="#" class="car__rent-link">Rental Now
+                                </a>
+                            </div>
+                        </li>
+                        <li class="car__item">
+                            <div class="car__item-inner">
+                                <div class="car__item-title-wrapper">
+                                    <h3 class="car__item-title">
+                                        Nissan GT - R
+                                    </h3>
+                                    <p class="car__type">
+                                        Sport
+                                    </p>
+                                </div>
+                                <button class="car__btn" type="button"></button>
+                            </div>
+                            <img src="./images/car4.png" alt="Nissan GT - R picture" class="car__top-img car__top-img--4">
+                            <ul class="car__info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">80L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">2 People</p>
+                                </li>
+                            </ul>
+                            <div class="car__rent-wrapper car__rent-wrapper--margin">
+                                <div class="car__rent-desc-wrapper">
+                                    <p class="car__rent-desc">$80.00/ 
+                                        <span class="car__rent-desc-active">day</span>
+                                    </p>
+                                    <del class="car__rent-desc-active">$100.00</del>
+                                </div>
+                                <a href="#" class="car__rent-link">Rental Now
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <h2 class="car__title">
+                    Recomendation Car
+                </h2>
+                
+                <ul class="car__list-bottom">
+                    <li class="car__bottom-item">
+                        <div class="car__item-inner">
+                            <div class="car__item-title-wrapper">
+                                <h3 class="car__item-title">
+                                    All New Rush
+                                </h3>
+                                <p class="car__type">
+                                    SUV
+                                </p>
+                            </div>
+                            <button class="car__btn" type="button"></button>
+                        </div>
+                        
+                        <div class="car__img-wrapper car__img-wrapper--margin-b">
+                            <img src="./images/car5.png" alt="All New Rush picture" class="car__bottom-img car__bottom-img--5">
+                            <ul class="car__bottom-info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">70L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">6 People</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="car__rent-wrapper car__rent-wrapper--margin">
+                            <div class="car__rent-desc-wrapper">
+                                <p class="car__rent-desc">$72.00/ 
+                                    <span class="car__rent-desc-active">day</span>
+                                </p>
+                                <del class="car__rent-desc-active">$80.00</del>
+                            </div>
+                            <a href="#" class="car__rent-link">Rental Now
+                            </a>
+                        </div>
+                    </li>
+                    <li class="car__bottom-item">
+                        <div class="car__item-inner">
+                            <div class="car__item-title-wrapper">
+                                <h3 class="car__item-title">
+                                    CR - V
+                                </h3>
+                                <p class="car__type">
+                                    SUV
+                                </p>
+                            </div>
+                            <button class="car__btn" type="button"></button>
+                        </div>
+                        
+                        <div class="car__img-wrapper ">
+                            <img src="./images/car6.png" alt="CR - V picture" class="car__bottom-img car__bottom-img--6">
+                            <ul class="car__bottom-info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">80L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">6 People</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="car__rent-wrapper ">
+                            <div class="car__rent-desc-wrapper">
+                                <p class="car__rent-desc">$80.00/ 
+                                    <span class="car__rent-desc-active">day</span>
+                                </p>
+                            </div>
+                            <a href="#" class="car__rent-link">Rental Now
+                            </a>
+                        </div>
+                    </li>
+                    <li class="car__bottom-item">
+                        <div class="car__item-inner">
+                            <div class="car__item-title-wrapper">
+                                <h3 class="car__item-title">
+                                    All New Terios
+                                </h3>
+                                <p class="car__type">
+                                    SUV
+                                </p>
+                            </div>
+                            <button class="car__btn" type="button"></button>
+                        </div>
+                        
+                        <div class="car__img-wrapper ">
+                            <img src="./images/car7.png" alt="All New Terios picture" class="car__bottom-img car__bottom-img--7">
+                            <ul class="car__bottom-info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">90L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">6 People</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="car__rent-wrapper ">
+                            <div class="car__rent-desc-wrapper">
+                                <p class="car__rent-desc">$74.00/ 
+                                    <span class="car__rent-desc-active">day</span>
+                                </p>
+                            </div>
+                            <a href="#" class="car__rent-link">Rental Now
+                            </a>
+                        </div>
+                    </li>
+                    <li class="car__bottom-item">
+                        <div class="car__item-inner">
+                            <div class="car__item-title-wrapper">
+                                <h3 class="car__item-title">
+                                    New MG ZS
+                                </h3>
+                                <p class="car__type">
+                                    SUV
+                                </p>
+                            </div>
+                            <button class="car__btn" type="button"></button>
+                        </div>
+                        
+                        <div class="car__img-wrapper ">
+                            <img src="./images/car8.png" alt="New MG ZS picture" class="car__bottom-img car__bottom-img--8">
+                            <ul class="car__bottom-info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">80L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">6 People</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="car__rent-wrapper ">
+                            <div class="car__rent-desc-wrapper">
+                                <p class="car__rent-desc">$80.00/ 
+                                    <span class="car__rent-desc-active">day</span>
+                                </p>
+                            </div>
+                            <a href="#" class="car__rent-link">Rental Now
+                            </a>
+                        </div>
+                    </li>
+                    <li class="car__bottom-item">
+                        <div class="car__item-inner">
+                            <div class="car__item-title-wrapper">
+                                <h3 class="car__item-title">
+                                    MG ZX Exclusive
+                                </h3>
+                                <p class="car__type">
+                                    Hatchback 
+                                </p>
+                            </div>
+                            <button class="car__btn" type="button"></button>
+                        </div>
+                        
+                        <div class="car__img-wrapper car__img-wrapper--margin-b">
+                            <img src="./images/car9.png" alt="MG ZX Exclusive picture" class="car__bottom-img car__bottom-img--9">
+                            <ul class="car__bottom-info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">70L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">4 People</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="car__rent-wrapper car__rent-wrapper--margin">
+                            <div class="car__rent-desc-wrapper">
+                                <p class="car__rent-desc">$76.00/ 
+                                    <span class="car__rent-desc-active">day</span>
+                                </p>
+                                <del class="car__rent-desc-active">$80.00</del>
+                            </div>
+                            <a href="#" class="car__rent-link">Rental Now
+                            </a>
+                        </div>
+                    </li>
+                    <li class="car__bottom-item car__bottom-item--hide">
+                        <div class="car__item-inner">
+                            <div class="car__item-title-wrapper">
+                                <h3 class="car__item-title">
+                                    New MG ZS
+                                </h3>
+                                <p class="car__type">
+                                    SUV
+                                </p>
+                            </div>
+                            <button class="car__btn" type="button"></button>
+                        </div>
+                        
+                        <div class="car__img-wrapper ">
+                            <img src="./images/car10.png" alt="New MG ZS picture" class="car__bottom-img car__bottom-img--10">
+                            <ul class="car__bottom-info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">80L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">6 People</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="car__rent-wrapper ">
+                            <div class="car__rent-desc-wrapper">
+                                <p class="car__rent-desc">$80.00/ 
+                                    <span class="car__rent-desc-active">day</span>
+                                </p>
+                            </div>
+                            <a href="#" class="car__rent-link">Rental Now
+                            </a>
+                        </div>
+                    </li>
+                    <li class="car__bottom-item car__bottom-item--hide">
+                        <div class="car__item-inner">
+                            <div class="car__item-title-wrapper">
+                                <h3 class="car__item-title">
+                                    MG ZX Excite
+                                </h3>
+                                <p class="car__type">
+                                    Hatchback
+                                </p>
+                            </div>
+                            <button class="car__btn" type="button"></button>
+                        </div>
+                        
+                        <div class="car__img-wrapper ">
+                            <img src="./images/car11.png" alt="MG ZX Excite picture" class="car__bottom-img car__bottom-img--11">
+                            <ul class="car__bottom-info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">90L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">4 People</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="car__rent-wrapper ">
+                            <div class="car__rent-desc-wrapper">
+                                <p class="car__rent-desc">$74.00/ 
+                                    <span class="car__rent-desc-active">day</span>
+                                </p>
+                            </div>
+                            <a href="#" class="car__rent-link">Rental Now
+                            </a>
+                        </div>
+                    </li>
+                    <li class="car__bottom-item car__bottom-item--hide">
+                        <div class="car__item-inner">
+                            <div class="car__item-title-wrapper">
+                                <h3 class="car__item-title">
+                                    New MG ZS
+                                </h3>
+                                <p class="car__type">
+                                    SUV
+                                </p>
+                            </div>
+                            <button class="car__btn" type="button"></button>
+                        </div>
+                        
+                        <div class="car__img-wrapper ">
+                            <img src="./images/car12.png" alt="New MG ZS picture" class="car__bottom-img car__bottom-img--12">
+                            <ul class="car__bottom-info-list">
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">80L</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">Manual</p>
+                                </li>
+                                <li class="car__info-item">
+                                    <p class="car__info-desc">6 People</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="car__rent-wrapper ">
+                            <div class="car__rent-desc-wrapper">
+                                <p class="car__rent-desc">$80.00/ 
+                                    <span class="car__rent-desc-active">day</span>
+                                </p>
+                            </div>
+                            <a href="#" class="car__rent-link">Rental Now
+                            </a>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div class="car__bottom-link-wrapper">
+                    <a href="#" class="car__bottom-link">Show More Car</a>
+                    <p class="car__about-num">120 Car</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo-wrapper">
+                    <a href="/index.html" >
+                        <img src="./images/Logo.svg" class="site-logo" alt="site logo">
+                    </a>
+                    <address class="footer__address">
+                        <p class="footer__connect">
+                            Our vision is to provide convenience and help increase your sales business.
+                        </p>
+                        <a href="tel:+998905833597" class="footer__connect">+998 90 583-35-97</a>
+                        <a href="mailto:morent@gmail.com" class="footer__connect">morent@gmail.com</a>
+                    </address>
+                </div>
+                <div class="footer__about">
+                    <div class="footer__list-wrapper">
+                        <strong class="footer__title">
+                            About
+                        </strong>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">
+                                    How it works
+                                    
+                                    
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">
+                                    Featured
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">
+                                    Partnership
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">
+                                    Bussiness Relation
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__list-wrapper">
+                        <strong class="footer__title">
+                            Community
+                        </strong>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">
+                                    Events
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">
+                                    Podcast
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">
+                                    Invite a friend
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__end">
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./images/Twitter.svg" width="24" height="24" alt="Twitter logo">
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./images/Instagram.svg" width="24" height="24" alt="Instagram logo">
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./images/LinkedIn.svg" width="24" height="24" alt="LinkedIn logo">
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./images/Telegram.svg" width="24" height="24" alt="Telegram logo">
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__end-desc">
+                    ©2022 MORENT. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
