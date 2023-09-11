@@ -779,6 +779,9 @@ img {
   .hero__item {
     background-size: cover;
   }
+  .hero__item-title-wrapper {
+    max-width: 272px;
+  }
   .hero__item-title {
     font-size: 32px;
     line-height: 150%; /* 48px */
@@ -1379,6 +1382,10 @@ img {
 
 .car__bottom-item--hide {
   display: none;
+}
+
+.car__details-link {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 375px) {

@@ -279,6 +279,9 @@
 .car__bottom-item--hide {
     display: none;
 }
+.car__details-link {
+    text-decoration: none;
+}
 @include mobile-first(375px) {
     .car__list-bottom {
         justify-content: center;
