@@ -1,12 +1,13 @@
 .filter {
     padding-bottom: 32px;
-    overflow-x: hidden;
 }
 .filter__inner {
     position: relative;
 }
 
 .filter__item {
+    max-width: 327px;
+    width: 100%;
     padding: 16px;
     border-radius: 10px;
     background-color:#fff;
@@ -45,20 +46,21 @@
     margin-top: 24px;
 }
 .filter__list-item {
-    padding-right: 20px;
+    padding-right: 12px;
     border-right: 1px solid rgba(195, 212, 233, 0.40);
     
 }
 .filter__list-item:nth-child(2) {
-    padding-left: 20px;
+    padding-left: 12px;
     border-right: 1px solid rgba(195, 212, 233, 0.40);
 }
 .filter__list-item:nth-child(3) {
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 0;
     border-right: none;
 }
 .filter__list-label {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 150%;
     letter-spacing: -0.32px;
@@ -69,7 +71,7 @@
     align-items: center;
 }
 .filter__select {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.12px;
@@ -105,14 +107,46 @@
     .filter__select-wrapper {
         margin-top: 8px;
     }
+    .filter__item {
+        max-width: 526px;
+    }
+    .filter__list-label {
+        font-size: 16px;
+    }
+    .filter__list-item {
+        padding-right: 20px;
+    }
+    .filter__list-item:nth-child(2){
+        padding-left: 20px;
+    }
+    .filter__list-item:nth-child(3){
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .filter__select {
+        font-size: 12px;
+    }
 }
 @include mobile-first (425px) {
     .filter__item {
         padding: 24px 32px;
     }
 }
+@include mobile-first(1024px) {
+    .filter__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter__btn {
+        top: 40%;
+        left: 47%;
+    }
+}
 @include mobile-first (1110px) {
-    
+    .filter__inner{
+        row-gap: 44px;
+    } 
     .filter__item {
         padding: 25px 48px;
     }
@@ -126,11 +160,7 @@
     .filter__list {
         margin-top: 16px;
     }
-    .filter__btn {
-        position: relative;
-        top: 0;
-        // left: 0;
-    }
+    
     .filter__list-item:first-child {
         padding-right: 24px;
     }
@@ -144,16 +174,36 @@
 }
 @include mobile-first(1150px) {
     .filter__inner {
-        display: flex;
         align-items: center;
         justify-content: space-between;
     }
 }
+@include mobile-first(1220px) {
+    .filter__inner {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    .filter__btn {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
 @include mobile-first(1300px) {
+   
     .filter__select-box {
         margin-left: 25px;
     }
     .filter__select {
         font-weight: 500;
+    }
+    
+}
+@include mobile-first(1360px) {
+    .filter__item {
+        max-width: 582px;
+    }
+    .filter__inner {
+        column-gap: 44px;
     }
 }

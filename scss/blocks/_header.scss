@@ -2,7 +2,7 @@
     // display: none;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #fff;
+    background-color: #f6f7f9;
 }
 .logo-link {
     text-decoration: none;
@@ -32,6 +32,8 @@
     background-position: center;
     border-radius: 10px;
     border: 1px solid rgba(195, 212, 233, 0.40);
+    background-color: transparent;
+    
 }
 .header__input {
     display: block;
@@ -47,11 +49,11 @@
     border: none;
     border-radius: 10px;
     border: 1px solid rgba(195, 212, 233, 0.40);
-    background-color: #fff;
+    background-color: transparent;
     background-image: url(../../images/search-icon.svg);
     background-repeat: no-repeat;
     background-size: 24px 24px;
-    background-position: calc(0% + 17px);
+    background-position: calc(0% + 8px);
 }
 
 .header__input::before {
@@ -64,76 +66,128 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.header__form::after {
-    display: block;
-    display: none;
-    width: 24px;
-    height: 24px;
-    margin-left: auto;
-    content: " ";
-    background-image: url(../../images/searchfilter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.header__link-wrapper {
-    position: relative;
-    display: flex;
-    display: none;
-    align-items: center;
-    column-gap: 20px;
-    margin-left: auto;
-}
-.header__link {
-    width: 44px;
-    height: 44px;
-    border-radius: 90px;
-    border: 1px solid rgba(195, 212, 233, 0.40);
-    opacity: 0.8;
-    text-decoration-line: none;
-}
-.header__link-active {
-    display: inline-block;
-    text-decoration: none;
-}
-.header__link-img {
-    display: block;
-    width: 28px;
-    height: 28px;
-}
-.header__link:first-child {
-    background-image: url(../../images/heart.svg);
-    background-size: 24px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.header__link:nth-child(2) {
-    background-image: url(../../images/notification.svg);
-    background-size: 24px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.header__link:nth-child(2)::after {
-    position: absolute;
-    top: 0;
-    left: 94px;
-    content: " ";
-    width: 11px;
-    height: 11px;
-    background-image: url(../../images/Notificared.svg);
-    background-size: 24px;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-}
-.header__link:nth-child(3) {
-    background-image: url(../../images/settingsicon.svg);
-    background-size: 24px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.site-logo {
-    display: inline-block;
-    max-width: 108px;
-    width: 100%;
-    height: 28px;
-}
+// .header__input::after {
+    //     display: block;
+    //     display: none;
+    //     width: 24px;
+    //     height: 24px;
+    //     margin-left: auto;
+    //     content: " ";
+    //     background-image: url(../../images/searchfilter.svg);
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
+    .header__link-wrapper {
+        position: relative;
+        display: flex;
+        display: none;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .header__link {
+        width: 44px;
+        height: 44px;
+        border-radius: 90px;
+        border: 1px solid rgba(195, 212, 233, 0.40);
+        opacity: 0.8;
+        text-decoration-line: none;
+    }
+    .header__link-active {
+        display: inline-block;
+        text-decoration: none;
+    }
+    .header__link-img {
+        display: block;
+        width: 28px;
+        height: 28px;
+    }
+    .header__link:first-child {
+        background-image: url(../../images/heart.svg);
+        background-size: 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .header__link:nth-child(2) {
+        background-image: url(../../images/notification.svg);
+        background-size: 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .header__link:nth-child(2)::after {
+        position: absolute;
+        top: 0;
+        left: 94px;
+        content: " ";
+        width: 11px;
+        height: 11px;
+        background-image: url(../../images/Notificared.svg);
+        background-size: 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+    .header__link:nth-child(3) {
+        background-image: url(../../images/settingsicon.svg);
+        background-size: 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .site-logo {
+        display: inline-block;
+        max-width: 108px;
+        width: 100%;
+        height: 28px;
+    }
+    @include mobile-first(375px) {
+        .header__input-box {
+            width: 48px;
+            height: 48px;
+        }
+        .header__input {
+            background-position: calc(0% + 17px);
+        }
+    }
+    @include mobile-first(1024px) {
+        .site-header {
+            background-color: #fff;
+        }
+        .header__form {
+            display: block;
+            max-width: 492px;
+            width: 100%;
+        }
+        .header__form-passive {
+            display: none;
+        }
+        .header__link-wrapper {
+            display: flex;
+        }
+        .header__input-box {
+            display: none;
+        }
+        .header__input {
+            display: block;
+            max-width: 492px;
+            width: 100%;
+            border-radius: 70px;
+            border: 1px solid rgba(195, 212, 233, 0.40);
+            background-color:#fff;
+            background-image: url(../../images/search-icon.svg),url(../../images/searchfilter.svg);
+            background-position:calc(0% + 17px),calc(95% + 0px) calc(0% + 10px);
+        }
+        .header__link-active{
+            display: none;
+        }
+        .header__link-img {
+            width: 44px;
+            height: 44px;
+        }
+    }
+    @include mobile-first(1300px) {
+        .header__link-wrapper {
+            margin-left: auto;
+        }
+        .header__form {
+            margin-left: 64px;
+        }
+    } 
