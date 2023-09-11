@@ -92,6 +92,12 @@
     border-radius: 4px;
     background:#3563e9;
 }
+.hero__link:hover {
+    opacity: 0.8;
+}
+.hero__link:active {
+    background-color: #1a37a7;
+}
 .hero__link--active {
     background-color:#54a6ff;
 }
@@ -166,12 +172,19 @@
     }
 }
 @include mobile-first (1024px) {
+    .hero__item {
+        padding-left: 24px;
+        padding-top: 24px;
+    }
     .hero__item-inner {
         max-width: 272px;
     }
     .hero__item:nth-child(2) {
         position: relative;
         left: 0;
+    }
+    .hero__list {
+        overflow-x: visible;
     }
     .hero__item {
         background-size: cover;

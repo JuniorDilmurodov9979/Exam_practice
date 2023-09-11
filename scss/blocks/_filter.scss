@@ -104,6 +104,12 @@
     background-repeat: no-repeat;
     border: none;
 }
+.filter__btn:hover {
+    opacity: 0.8;
+}
+.filter__btn:active {
+    background-color: #1a37a7;
+}
 @include mobile-first (375px) {
     .filter__select-wrapper {
         margin-top: 8px;

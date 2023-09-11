@@ -233,6 +233,12 @@
     background-color:#3563e9;
     border-radius: 4px;
 }
+.car__rent-link:hover {
+    opacity: 0.8;
+}
+.car__rent-link:active {
+    background-color: #1a37a7;
+}
 .car__bottom-link-wrapper {
     position: relative;
     display: flex;
@@ -254,6 +260,12 @@
     color: #fff;
     border-radius: 4px;
     background-color:#3563e9;
+}
+.car__bottom-link:hover {
+    opacity: 0.8;
+}
+.car__bottom-link:active {
+    background-color: #1a37a7;
 }
 .car__about-num {
     position: absolute;
@@ -438,6 +450,14 @@
     .car__bottom-link-wrapper {
         margin-top: 64px;
         margin-bottom: 64px;
+    }
+    .car__bottom-link {
+        width: 156px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .car__about-num {
+        font-weight: 500;
     }
 }
 @include mobile-first(1360px) {
