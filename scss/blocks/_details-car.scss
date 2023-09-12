@@ -85,8 +85,12 @@
         overflow-x: hidden;
     }
     .details__car-item {
-        max-width: 304px;
+        max-width: 317px;
         padding: 24px;
+    }
+    .details__item {
+        max-width: 317px;
+        width: 100%;
     }
     .details__car-item:nth-child(2){
         position: relative;
