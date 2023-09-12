@@ -87,6 +87,9 @@
     letter-spacing: -0.24px;
     color: #1a202c;
 }
+.footer__item-link:hover {
+    color: #1a202c;
+}
 @include mobile-first(550px) {
     .footer__end {
         display: flex;
