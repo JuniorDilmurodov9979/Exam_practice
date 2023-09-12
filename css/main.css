@@ -2031,6 +2031,8 @@ img {
 }
 
 .bar__label {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 12px;
   font-weight: 600;
   line-height: normal;
