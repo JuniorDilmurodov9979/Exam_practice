@@ -28,3 +28,17 @@ img {
     -ms-flex-positive: 1;
     flex-grow: 1;
 }
+.main__inner {
+    display: flex;
+}
+@include mobile-first(1024px) {
+    .main__inner {
+        justify-content: center;
+    }
+}
+@include mobile-first(1300px) {
+    .sections__wrapper {
+        margin-left: 32px;
+        margin-right: 20px;
+    }
+}

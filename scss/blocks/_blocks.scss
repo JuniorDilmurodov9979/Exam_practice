@@ -1,17 +1,21 @@
 @import "visually-hidden";
 @import "container";
 @import "header";
+
+// others
+
 @import "hero";
 @import "filter";
 @import "car";
 
+// second page 
+
+@import "details";
+@import "nav";
+@import "review";
+@import "details-car";
 
 
-
-
-// others
+// footer 
 
 @import "footer";
-// @import "visually-hidden";
-// @import "visually-hidden";
-// @import "visually-hidden";

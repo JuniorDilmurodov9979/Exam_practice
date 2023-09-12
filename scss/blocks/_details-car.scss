@@ -1,0 +1,106 @@
+.details__car-list {
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    @include list-unstyled;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.details__car-item {
+    max-width: 240px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.details__car-item:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 260px;
+}
+.details__car-item:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 520px;
+}
+.details__car-item:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 780px;
+}
+.details__car-info-list {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none
+}
+.details__car-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.details__car-img-wrapper-b {
+    margin-bottom: 42px;
+}
+.details__bottom-info-list {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+}
+@include mobile-first(375px) {
+    .details__car-list {
+        align-items: start;
+    }
+    .details__car-item:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 260px;
+    }
+    .details__car-item:nth-child(3) {
+        position: absolute;
+        top: 0;
+        left: 520px;
+    }
+    .details__car-item:nth-child(4) {
+        position: absolute;
+        top: 0;
+        left: 780px;
+    }
+}
+@include mobile-first(1024px) {
+    .details__car-list {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 32px;
+        margin-top: 26px;
+        padding-bottom: 32px;
+        overflow-x: hidden;
+    }
+    .details__car-item {
+        max-width: 304px;
+        padding: 24px;
+    }
+    .details__car-item:nth-child(2){
+        position: relative;
+        left: 0;
+    }
+    .details__car-item:nth-child(3){
+        position: relative;
+        left: 0;
+    }
+    .details__car-item:nth-child(4){
+        position: relative;
+        left: 0;
+    }
+    .details__car-img-wrapper-b {
+        margin-bottom: 0;
+    }
+}

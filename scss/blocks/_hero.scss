@@ -34,8 +34,8 @@
     left: 361px;
     bottom: 0;
     right: 0;
-    background-image:url(../../images/heroli2bgwhite.svg);
-    background-size: auto;
+    background-image:url(../../images/herobgwhiteorginal.svg);
+    background-size: cover;
     border-radius: 10px;
     background-color:#3563e9;
 }
@@ -175,6 +175,9 @@
     .hero__item {
         padding-left: 24px;
         padding-top: 24px;
+    }
+    .hero__item:nth-child(2) {
+        background-image: url(../../images/heroli2bgwhite.svg);
     }
     .hero__item-inner {
         max-width: 272px;
